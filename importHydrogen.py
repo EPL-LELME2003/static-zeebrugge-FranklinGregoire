@@ -27,7 +27,7 @@ model = pyo.ConcreteModel()
 ##########################################
 
 # Specify the path towards your solver (gurobi) file
-solver = pyo.SolverFactory('...')
+solver = pyo.SolverFactory('\gurobi1201\gurobi.lic')
 sol = solver.solve(model)
 
 # Print here the number of CH4 boats and NH3 boats
