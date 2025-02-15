@@ -102,3 +102,10 @@ print(model.boatsNH3.value)
 model.display()
 model.dual.display()
 model.rc.display()
+
+""" REMARKS 
+
+The maxCO2 constraint is not limiting because in the dual problem, the dual value is of the maxCO2Constr "variable" is 0.
+Both boatsCH4 and boatsNH3 variables are non zero because the reduced cost associated to those variables are 0.
+
+"""
